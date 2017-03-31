@@ -1,0 +1,20 @@
+{
+  "name": "calorie-counter",
+  "description": "",
+  "main": "",
+  "authors": [
+    "jdc <jdcxxx@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jdcamp/calorie-tracker",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.1"
+  }
+}

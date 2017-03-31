@@ -18,7 +18,8 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../bower_components/materialize/dist/css/materialize.css"
       ],
       "scripts": [],
       "environments": {
