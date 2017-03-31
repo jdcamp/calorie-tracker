@@ -10,8 +10,14 @@ export class FoodListComponent implements OnInit {
   @Input() childFoodList: FoodModule[];
   @Output() editFoodSender = new EventEmitter();
 
+  filterBy = 'all';
+
+  onChange(optionFromMenu) {
+  this.filterBy = optionFromMenu;
+}
+
   editFoodButton(food: FoodModule) {
-      this.editFoodSender.emit(food);
+    this.editFoodSender.emit(food);
   }
   ngOnInit() {
   }

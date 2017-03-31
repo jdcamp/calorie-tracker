@@ -1,18 +1,23 @@
-  <table *ngIf="childFoodList" class="striped">
-    <thead>
-      <tr>
-        <td>Food</td>
-        <td>calories</td>
-        <td>Notes</td>
-        <td>Edit</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let food of childFoodList">
-        <td>{{food.name}}</td>
-        <td>{{food.calories}}</td>
-        <td>{{food.details}}</td>
-        <td><button type="button" name="button" class="btn" (click)="editFoodButton(food)">Edit</button></td>
-      </tr>
-    </tbody>
-  </table>
+<select (change)="onChange($event.target.value)" materialize="material_select">
+        <option value="all">All</option>
+        <option value="<=">Less Than</option>
+        <option value=">=">Greater Than</option>
+</select>
+<table *ngIf="childFoodList" class="striped">
+  <thead>
+    <tr>
+      <td>Food</td>
+      <td>calories</td>
+      <td>Notes</td>
+      <td>Edit</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let food of childFoodList | calorieFilter:filterBy">
+      <td>{{food.name}}</td>
+      <td>{{food.calories}}</td>
+      <td>{{food.details}}</td>
+      <td><button type="button" name="button" class="btn" (click)="editFoodButton(food)">Edit</button></td>
+    </tr>
+  </tbody>
+</table>
