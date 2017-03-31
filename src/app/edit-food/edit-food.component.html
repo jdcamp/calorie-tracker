@@ -6,10 +6,10 @@
         <input name='name' type='text' [(ngModel)]="childSelectedFood.name" placeholder='Food name'>
 
         <label for='brand'>Calories:</label>
-        <input name='calories' type='number' [(ngModel)]="childSelectedFood.calories">
+        <input name='calories' type='number' min='0' [(ngModel)]="childSelectedFood.calories">
 
         <label for='details'>Details:</label>
-        <input name='details' type='text' step='.01' min='0' [(ngModel)]="childSelectedFood.details">
+        <input name='details' type='text' [(ngModel)]="childSelectedFood.details">
       </form>
       <button class="btn green" (click)="doneButtonClicked()">Done</button>
     </div>

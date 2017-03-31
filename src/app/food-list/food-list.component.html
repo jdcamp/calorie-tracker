@@ -1,9 +1,9 @@
 <select (change)="onChange($event.target.value)" materialize="material_select">
         <option value="all">All</option>
-        <option value="<=">Less Than</option>
-        <option value=">=">Greater Than</option>
+        <option value="low-calories">Less Than</option>
+        <option value='high-calories'>Greater Than</option>
 </select>
-<table *ngIf="childFoodList" class="striped">
+<table *ngIf="childFoodList" class="table table-striped">
   <thead>
     <tr>
       <td>Food</td>

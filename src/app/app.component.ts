@@ -12,7 +12,8 @@ export class AppComponent {
   masterFoodList: FoodModule[] = [
     new FoodModule('Taco', 120, 'One taco from the carts'),
     new FoodModule('Cinnabun', 1200, 'It was good'),
-    new FoodModule('apple', 80, 'Fiji apple')
+    new FoodModule('apple', 80, 'Fiji apple'),
+    new FoodModule('bag of apples', 800, 'Fiji apples')
   ];
   addFood(food: FoodModule) {
     this.masterFoodList.push(food);
