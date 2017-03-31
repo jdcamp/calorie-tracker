@@ -1,9 +1,10 @@
-  <table *ngIf="childFoodList">
+  <table *ngIf="childFoodList" class="striped">
     <thead>
       <tr>
         <td>Food</td>
         <td>calories</td>
         <td>Notes</td>
+        <td>Edit</td>
       </tr>
     </thead>
     <tbody>
@@ -11,6 +12,7 @@
         <td>{{food.name}}</td>
         <td>{{food.calories}}</td>
         <td>{{food.details}}</td>
+        <td><button type="button" name="button" class="btn" (click)="editFoodButton(food)">Edit</button></td>
       </tr>
     </tbody>
   </table>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { FoodModule } from '../food/food.module';
 
 @Component({
   selector: 'app-edit-food',
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-food.component.css']
 })
 export class EditFoodComponent implements OnInit {
+    @Input() childSelectedFood: FoodModule;
+    @Output() editFoodSender = new EventEmitter();
 
-  constructor() { }
-
+    doneButtonClicked() {
+        alert("TODO: Set masterEditFoodView to null");
+    }
   ngOnInit() {
   }
 

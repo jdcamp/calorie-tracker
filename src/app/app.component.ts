@@ -8,12 +8,16 @@ import { FoodModule } from './food/food.module';
 })
 export class AppComponent {
   title = 'Calorie Counter';
+  masterEditFoodView = null;
   masterFoodList: FoodModule[] = [
     new FoodModule('Taco', 120, 'One taco from the carts'),
     new FoodModule('Cinnabun', 1200, 'It was good'),
     new FoodModule('apple', 80, 'Fiji apple')
-];
-addFood(food: FoodModule) {
+  ];
+  addFood(food: FoodModule) {
     this.masterFoodList.push(food);
-}
+  }
+  editFood(food: FoodModule) {
+     this.masterEditFoodView = food;
+  }
 }

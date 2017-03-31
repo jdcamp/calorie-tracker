@@ -1,3 +1,16 @@
-<p>
-  edit-food works!
-</p>
+<div>
+    <div *ngIf="childSelectedFood">
+      <h1>{{childSelectedFood.name}}</h1>
+      <form>
+        <label for='name'>Name:</label>
+        <input name='name' type='text' [(ngModel)]="childSelectedFood.name" placeholder='Food name'>
+
+        <label for='brand'>Calories:</label>
+        <input name='calories' type='number' [(ngModel)]="childSelectedFood.calories">
+
+        <label for='details'>Details:</label>
+        <input name='details' type='text' step='.01' min='0' [(ngModel)]="childSelectedFood.details">
+      </form>
+      <button class="btn green" (click)="doneButtonClicked()">Done</button>
+    </div>
+  </div>
