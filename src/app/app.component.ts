@@ -8,9 +8,9 @@ import { FoodModule } from './food/food.module';
 })
 export class AppComponent {
   title = 'app works this is a test of gh pages!';
-  masterFoodList: Food[] = [
-      new Food('Taco', 120, "One taco from the carts"),
-      new Food('Cinnabun', 1200, "It was good"),
-      new Food('apple', 80, "Fiji apple")
+  masterFoodList: FoodModule[] = [
+    new FoodModule('Taco', 120, "One taco from the carts"),
+    new FoodModule('Cinnabun', 1200, "It was good"),
+    new FoodModule('apple', 80, "Fiji apple")
   ]
 }
