@@ -8,5 +8,5 @@ import { CommonModule } from '@angular/common';
   declarations: []
 })
 export class FoodModule {
-    constructor(public name: string, public calories: number, public details: string){}
+    constructor(public name: string, public calories: number, public details: string) { }
 }

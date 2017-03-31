@@ -1,3 +1,16 @@
-<p>
-  food-list works!
-</p>
+  <table *ngIf="childFoodList">
+    <thead>
+      <tr>
+        <td>Food</td>
+        <td>calories</td>
+        <td>Notes</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let food of childFoodList">
+        <td>{{food.name}}</td>
+        <td>{{food.calories}}</td>
+        <td>{{food.details}}</td>
+      </tr>
+    </tbody>
+  </table>

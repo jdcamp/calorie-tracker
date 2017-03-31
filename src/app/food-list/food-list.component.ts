@@ -8,8 +8,8 @@ import { FoodModule } from '../food/food.module';
 })
 export class FoodListComponent implements OnInit {
     @Input() childFoodList: FoodModule[];
-
   ngOnInit() {
+      console.log(this.childFoodList);
   }
 
 }
