@@ -11,7 +11,7 @@ export class EditFoodComponent implements OnInit {
     @Output() editFoodSender = new EventEmitter();
 
     doneButtonClicked() {
-        alert('TODO: Set masterEditFoodView to null');
+        this.editFoodSender.emit();
     }
   ngOnInit() {
   }
