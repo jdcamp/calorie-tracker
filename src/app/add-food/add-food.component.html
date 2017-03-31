@@ -1,0 +1,15 @@
+
+    <h4>Log Food</h4>
+    <div>
+      <label>Name:</label>
+      <input #newName>
+    </div>
+    <div>
+      <label>Calories:</label>
+      <input #newCalories type="number" min="1">
+    </div>
+    <div>
+      <label>Details:</label>
+      <input #newDetails>
+    </div>
+    <button class="btn btn-success" (click)="submitForm(newName.value, newCalories.value, newDetails.value); newName.value = ''; newCalories.value = ''; newDetails.value = '';">Add</button>
