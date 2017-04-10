@@ -6,6 +6,14 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 _A simple calorie tracker where a user can enter what they ate and view the total calories that they consumed_
 
+## Setup
+
+* Clone repo
+* Open terminal and run `npm install`
+* Open terminal and run `bower install`
+* Open terminal and run `ng serve`
+
+
 ## User Stories
 
 * As a user, I want to view a list of all the food logged
@@ -25,19 +33,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## components
+add-food component: function is to add food from a form a user fills out
+edit-food component: function is to edit food already logged by the user
+food class: a model that has a name, calories and description properties
+food-list component: function is to display all of the food logged in a list
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Licensing
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ MIT licensing
